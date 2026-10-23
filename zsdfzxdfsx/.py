@@ -37,3 +37,16 @@ health = heal(health, 20)
 print("После лечения:", health)
 
 apply_damage(health, 10)
+
+def is_alive(health):
+    return health > 0
+
+print(is_alive(50))
+print(is_alive(0))
+print(is_alive(-10))
+
+def check_door(has_key):
+    if has_key == True:
+        print("Дверь открыта!")
+    else:
+        print("Нужен ключ.")
